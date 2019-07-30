@@ -6,7 +6,7 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
-
+import Footer from "./components/footer";
 import Particulier from './components/newPart/Particulier'
 import EditAtelier from './components/editAtelier/editAtelier'
 import ListTout from "./components/liste/liste"
@@ -52,7 +52,7 @@ class App extends Component {
               <div className="row">
                 <div className="col-md-3">
                   <div className="container-fluid">
-                    {/* <h2>Bienvenu sur <span id="nomProject"><span className="aingo">T</span>sara<span className="aingo">Na</span>andro</span></h2> */}
+                     <h2>Bienvenu sur <span id="nomProject"><span className="aingo">A</span>teliers de<span className="aingo"> c</span>uisine</span></h2>
                   </div>
                 </div>
                 <div className="col-md-9">
@@ -60,6 +60,7 @@ class App extends Component {
                   </div>
                 </div>
               </div>
+              <Footer/>
             </div>
             <Route exact path="/" component={Landing} />
             <Route exact path="/Particulier" component={Particulier} />
